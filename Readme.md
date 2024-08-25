@@ -1,1 +1,1 @@
-#for bettter experience view in screen-seze 1440.
+for bettter experience view in screen-seze 1440.
