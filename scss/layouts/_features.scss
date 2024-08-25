@@ -1,0 +1,96 @@
+.features{
+    padding: 0px 100px 0px 100px;
+    display: flex;
+ 
+    justify-content: space-between;
+    
+    .leftside{
+        
+        h2{
+            font-family: $logo-font;
+            font-size: 56px;
+            line-height: 64px;
+            font-weight: 700;
+        }
+        p{
+            font-family: $logo-font;
+            font-size: 16px;
+            line-height: 24px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        button{
+            
+            padding: 16px 32px 16px 32px;
+            border-radius: 50px 50px;
+            background-color:$button-color;
+            a{
+                
+                color: white;
+                text-decoration: none;
+                font-family:$logo-font;
+                font-size: 14px;
+            }
+
+        }
+    }
+    .rightside{
+        
+      
+        .upperrow{
+            display: flex;
+            justify-content:space-between;
+            padding-bottom: 32px;
+            .upperleft{
+                h3{
+                font-family: $logo-font;
+                font-size: 24px;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: $logo-font;
+                    line-height: 24px;
+                }
+            }
+            .upperright{
+                padding-left: 34px;
+                h3{
+                    font-family: $logo-font;
+                    font-size: 24px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: $logo-font;
+                        line-height: 24px;
+                    }
+            }
+            
+        }
+        .lowerrow{
+            display: flex;
+            justify-content: space-between;
+            .lowerleft{
+                h3{
+                    font-family: $logo-font;
+                    font-size: 24px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: $logo-font;
+                        line-height: 24px;
+                    }
+            }
+            .lowerright{
+                h3{
+                    font-family: $logo-font;
+                    font-size: 24px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: $logo-font;
+                        line-height: 24px;
+                    }
+            }
+        }
+    }
+}

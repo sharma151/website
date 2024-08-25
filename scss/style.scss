@@ -1,0 +1,28 @@
+//reset
+@import "./Base/reset";
+
+//variables
+@import "./Abstracts/variables";
+
+//mixins
+@import "./Abstracts/mixins";
+
+//navbar
+@import "./layouts/navbar";
+
+//banners
+@import"./layouts/banner";
+
+//team
+@import "./layouts/team";
+
+//features
+@import "./layouts/features";
+
+//cta
+@import "./layouts/cta";
+
+//footer
+@import "./layouts/footer";
+ 
+

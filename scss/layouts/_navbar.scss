@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 100px 0px 100px;
+    .menuleft{
+        display: flex;
+        gap: 40px;
+        padding-top: 15px;
+        h3{
+            font-family:$logo-font;
+            span{
+                color:$spancolor;
+                }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            li{ 
+                justify-content: space-around;
+                padding-right: 24px;
+                a{
+                    text-decoration: none;
+                    font-family:$logo-font;
+                    font-size:$smalltext;
+                    color: black;
+                    }
+            }
+            
+        }
+    }
+    .menuright{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-family:$logo-font;
+            font-size:$smalltext;
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+        button{
+            padding: 16px 32px 16px 32px;
+            border-radius: 50px 50px;
+            color: white;
+            background-color:$button-color;
+            font-family:$logo-font;
+
+        }
+    }
+}
