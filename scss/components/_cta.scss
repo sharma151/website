@@ -7,7 +7,7 @@
     position: relative;
     top: 116px;
     
-    .items{
+    &__items{
         display: flex;
         align-items: center;
         flex-direction: column;

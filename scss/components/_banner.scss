@@ -1,6 +1,6 @@
 .banner{
     padding: 150px 100px 0px 100px;
-    .row{
+    &__row{
         display: flex;
         justify-content: space-between;  
         p{
@@ -18,7 +18,7 @@
             }    
         }
     }
-    .image{
+    &__image{
         position: relative;
         top: 116px;
         width: 100%;

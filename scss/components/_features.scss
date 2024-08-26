@@ -1,7 +1,6 @@
 .features{
     padding: 0px 100px 0px 100px;
     display: flex;
- 
     justify-content: space-between;
     
     .leftside{
@@ -37,7 +36,7 @@
     .rightside{
         
       
-        .upperrow{
+        &__upperrow{
             display: flex;
             justify-content:space-between;
             padding-bottom: 32px;
@@ -66,7 +65,7 @@
             }
             
         }
-        .lowerrow{
+        &__lowerrow{
             display: flex;
             justify-content: space-between;
             .lowerleft{

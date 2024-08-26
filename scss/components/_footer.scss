@@ -4,7 +4,7 @@
     padding: 0px 100px 100px 100px;
     position: relative;
     top: 216px;
-    .socials{
+    &__socials{
         
         h3{
             font-family: $logo-font;
@@ -22,7 +22,7 @@
         }
 
     }
-    .links{
+    &__links{
         display: flex;
         gap: 32px;
         .about{
