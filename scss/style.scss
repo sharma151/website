@@ -1,30 +1,40 @@
-//reset
-@import "./Base/reset";
-
-//variables
-@import "./Abstracts/variables";
+//abstracts-breakpoints
+@import "./Abstracts/breakpoint";
 
 //mixins
 @import "./Abstracts/mixins";
 
-//navbar
-@import "./layouts/navbar";
+//variables
+@import "./Abstracts/variables";
+
+//base-reset
+@import "./Base/reset";
+
+//components
 
 //banners
-@import"./layouts/banner";
-
-//team
-@import "./layouts/team";
-
-//features
-@import "./layouts/features";
+@import "./components/banner";
 
 //cta
-@import "./layouts/cta";
+@import "./components/cta";
+
+//features
+@import "./components/features";
 
 //footer
-@import "./layouts/footer";
+@import"./components/footer";
 
-//container
-@import "./layouts/container"
+//navbar
+@import "./components/navbar";
+
+//team
+ @import './components/team';
+
+
+//layouts
+
+@import "./layouts/container";
+
+
+
 
