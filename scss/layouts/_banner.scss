@@ -2,7 +2,7 @@
     padding: 150px 100px 0px 100px;
     .row{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;  
         p{
             font-family: $logo-font;
             font-size: 72px;
@@ -14,7 +14,7 @@
             line-height: 80px;
             font-weight: 700;
             color: $spancolor;
-            }
+            }    
         }
     }
     .image{
