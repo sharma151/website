@@ -1,5 +1,6 @@
 .banner{
     padding: 150px 100px 0px 100px;
+    
     .row{
         display: flex;
         justify-content: space-between;  
@@ -14,6 +15,7 @@
             line-height: 80px;
             font-weight: 700;
             color: $spancolor;
+            
             }    
         }
     }
