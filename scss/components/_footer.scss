@@ -1,11 +1,27 @@
 .footer{
+
     display: flex;
     justify-content: space-between;
     padding: 0px 100px 100px 100px;
     position: relative;
     top: 216px;
+        @media(max-width:360px){
+            padding:0px 18px;
+            position: relative;
+            top: 64px;
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction: column-reverse;
+           
+        }
     &__socials{
-        
+        @media(max-width:360px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 32px;
+        }
         h3{
             font-family: $logo-font;
             span{
@@ -15,9 +31,12 @@
         ul{
             padding-top: 74px;
             display: flex;
-            justify-content: space-around;
             list-style: none;
             gap: 8px;
+            @media (max-width:360px) {
+                padding: 16px;
+                
+            }
 
         }
 
@@ -25,7 +44,13 @@
     &__links{
         display: flex;
         gap: 32px;
+        @media (max-width:360px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
         .about{
+            
             p{
                 font-size: 18px;
                 font-family: $logo-font;

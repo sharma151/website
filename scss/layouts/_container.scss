@@ -1,7 +1,10 @@
 .container {
     width:100%;
     max-width: 1440px; 
-    // height: 4083px;
-    
-   
+    overflow: hidden;
+    height: 4083px;
+    @media (max-width:360px){
+        width:100%;
+        height: 4920px;
+    }
 }

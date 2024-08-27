@@ -2,6 +2,13 @@
     padding: 0px 100px 0px 100px;
     display: flex;
     justify-content: space-between;
+    @media (max-width:360px){
+        padding: 0px 18px 0px 18px;
+        flex-direction: column;
+        position: relative;
+        top: -90px;
+      
+    }
     
     .leftside{
         
@@ -10,6 +17,14 @@
             font-size: 56px;
             line-height: 64px;
             font-weight: 700;
+                @media(max-width:360px){
+                    
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: -0.025em;
+                    text-align: left;
+
+                }
         }
         p{
             font-family: $logo-font;
@@ -17,12 +32,24 @@
             line-height: 24px;
             padding-top: 24px;
             padding-bottom: 24px;
+            width: 100%;;
+            @media(max-width: 360px){
+                font-size: 16px;
+                padding: 24px 0px 24px 0px;
+                width: 323px;
+                              
+            }
         }
         button{
             
             padding: 16px 32px 16px 32px;
             border-radius: 50px 50px;
             background-color:$button-color;
+                @media(max-width:360px){
+                    padding: 16px 32px 16px 32px;
+                    border-radius: 32px;
+                   
+                }
             a{
                 
                 color: white;
@@ -34,25 +61,63 @@
         }
     }
     .rightside{
-        
+        @media(max-width:360px){
+            padding-top: 32px;
+        }
       
         &__upperrow{
             display: flex;
             justify-content:space-between;
             padding-bottom: 32px;
+            @media(max-width:360px){
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                align-items: center;
+                
+                gap: 32px;
+                padding-bottom: 32px;                
+            }
             .upperleft{
+                @media (max-width:360px){
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    svg{
+                        width: 92px;
+                        height: 92px;
+                    }
+                    
+                }
                 h3{
                 font-family: $logo-font;
                 font-size: 24px;
+                    
                 }
                 p{
                     font-size: 16px;
                     font-family: $logo-font;
                     line-height: 24px;
+                    @media(max-width:360px){
+                        text-align:center;
+                    }
                 }
             }
             .upperright{
                 padding-left: 34px;
+                @media (max-width:360px){
+                    padding: 0px;
+                   
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    svg{
+                        width: 92px;
+                        height: 92px;
+                    }
+                    
+                }
                 h3{
                     font-family: $logo-font;
                     font-size: 24px;
@@ -61,6 +126,9 @@
                         font-size: 16px;
                         font-family: $logo-font;
                         line-height: 24px;
+                        @media(max-width:360px){
+                            text-align:center;
+                        }
                     }
             }
             
@@ -68,7 +136,28 @@
         &__lowerrow{
             display: flex;
             justify-content: space-between;
+            
+            
+            @media(max-width:360px){
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                align-items: center;
+                
+                gap: 32px;  
+                
+            }
             .lowerleft{
+                @media (max-width:360px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   
+                    svg{
+                        width: 92px;
+                        height: 92px;
+                    }
+                }
                 h3{
                     font-family: $logo-font;
                     font-size: 24px;
@@ -77,9 +166,22 @@
                         font-size: 16px;
                         font-family: $logo-font;
                         line-height: 24px;
+                        @media(max-width:360px){
+                            text-align:center;
+                        }
                     }
             }
             .lowerright{
+                @media (max-width:360px){
+                  
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    svg{
+                        width: 92px;
+                        height: 92px;
+                    }
+                }
                 h3{
                     font-family: $logo-font;
                     font-size: 24px;
@@ -88,6 +190,9 @@
                         font-size: 16px;
                         font-family: $logo-font;
                         line-height: 24px;
+                        @media(max-width:360px){
+                            text-align:center;
+                        }
                     }
             }
         }
