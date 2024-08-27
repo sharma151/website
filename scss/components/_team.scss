@@ -13,6 +13,12 @@
         z-index:-1;
         height: 2118px;   
         }
+        @media (max-width:1024px) {
+            position: relative;
+            top: -118px;
+            z-index:-1;
+               
+            }
     &__team{
         position:relative;
         top: 446px;
@@ -64,6 +70,7 @@
                 position: relative;
                 top: 40px;
                 }
+                
             
             img{
                 height: 522px;
@@ -72,6 +79,13 @@
                 border-radius: 32px;
                 @media(max-width:360px){
                     width: 328px;
+                    height: 436px;
+                    margin-bottom: 32px;
+                    border-radius: 26.78px;
+                } 
+                @media(max-width:1024px){
+                    width: 280px;
+                    padding: 10px;
                     height: 436px;
                     margin-bottom: 32px;
                     border-radius: 26.78px;
