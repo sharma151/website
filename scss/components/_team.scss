@@ -1,7 +1,7 @@
 
 
 .background{
-    height: 1572px;
+    // height: 1572px;
     width: 100%;
     background-color: $button-color;
     position: relative;
@@ -13,16 +13,15 @@
         z-index:-1;
         height: 2118px;   
         }
-        // @media (max-width:1024px) {
-        //     position: relative;
-        //     top: -118px;
-        //     z-index:-1;
-                 
-        //     }
+        @media (max-width:1024px) {
+            position: relative;
+            top: -118px;
+            z-index:-1;   
+            }
     &__team{
         position:relative;
-        top: 446px;
-        padding: 0px 100px 0px 100px;
+        // top: 446px;
+        padding: 390px 100px 0px 100px;
             @media(max-width:360px){
             
             position:relative;
@@ -55,11 +54,11 @@
             
         }
         .row2{
-            position: relative;
-            top: 116px;
+            // position: relative;
+            // top: 116px;
+            padding-top: 116px;
             display: flex;
-             justify-content: space-around;
-         
+            justify-content: space-around;
             width: 100%;
             height:100%;
             flex-wrap: wrap;
@@ -100,11 +99,14 @@
         }
         .row3{
             
-            position:relative;
+            // position:relative;
+            // top:250px;
+            padding-top: 116px;
+            padding-bottom: 108px;
             width: 100%;
-            top:250px;
             display:inline-flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             @media(max-width:360px){
                 display: flex;
                 flex-direction: column;
@@ -117,6 +119,7 @@
                 display:flex;
                 gap:32px;
                 align-items: center;
+                flex-wrap: wrap;
                     @media(max-width:360px){
                         display: flex;
                         align-items: center;

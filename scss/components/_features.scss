@@ -70,6 +70,11 @@
             flex-wrap: wrap ;
             justify-content:space-between;
             padding-bottom: 32px;
+
+            &--modifier{
+                outline: 1px solid green;
+            }
+
             @media(max-width:360px){
                 display: flex;
                 flex-direction: column;
@@ -199,3 +204,4 @@
         }
     }
 }
+
