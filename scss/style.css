@@ -699,6 +699,13 @@ div:has(#toggle:checked) ~ .dropdown {
     border-radius: 26.78px;
   }
 }
+@media (max-width: 1024px) {
+  .background__team .row2 img {
+    width: 280px;
+    height: 436px;
+    border-radius: 26.78px;
+  }
+}
 .background__team .row3 {
   padding-top: 116px;
   padding-bottom: 108px;
