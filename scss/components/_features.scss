@@ -2,6 +2,7 @@
     padding: 0px 100px 0px 100px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap ;
     @media (max-width:360px){
         padding: 0px 18px 0px 18px;
         flex-direction: column;
@@ -9,7 +10,6 @@
         top: -90px;
       
     }
-    
     .leftside{
         
         h2{
@@ -57,16 +57,17 @@
                 font-family:$logo-font;
                 font-size: 14px;
             }
-
         }
     }
     .rightside{
+        
         @media(max-width:360px){
             padding-top: 32px;
         }
       
         &__upperrow{
             display: flex;
+            flex-wrap: wrap ;
             justify-content:space-between;
             padding-bottom: 32px;
             @media(max-width:360px){
@@ -135,7 +136,7 @@
         }
         &__lowerrow{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between;flex-wrap: wrap ;
             
             
             @media(max-width:360px){

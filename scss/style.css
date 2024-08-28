@@ -16,6 +16,7 @@
 .banner__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (max-width: 360px) {
   .banner__row {
@@ -181,6 +182,7 @@
   padding: 0px 100px 0px 100px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (max-width: 360px) {
   .features {
@@ -243,6 +245,7 @@
 }
 .features .rightside__upperrow {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 32px;
 }
@@ -313,6 +316,7 @@
 .features .rightside__lowerrow {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (max-width: 360px) {
   .features .rightside__lowerrow {
@@ -377,6 +381,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0px 100px 300px 100px;
   position: relative;
   top: 216px;
@@ -419,6 +424,7 @@
 }
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 @media (max-width: 360px) {
@@ -590,13 +596,6 @@
     height: 2118px;
   }
 }
-@media (max-width: 1024px) {
-  .background {
-    position: relative;
-    top: -118px;
-    z-index: -1;
-  }
-}
 .background__team {
   position: relative;
   top: 446px;
@@ -639,9 +638,10 @@
   position: relative;
   top: 116px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
 }
 @media (max-width: 360px) {
   .background__team .row2 {
@@ -657,22 +657,11 @@
 .background__team .row2 img {
   height: 522px;
   width: 340px;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 32px;
 }
 @media (max-width: 360px) {
   .background__team .row2 img {
     width: 328px;
-    height: 436px;
-    margin-bottom: 32px;
-    border-radius: 26.78px;
-  }
-}
-@media (max-width: 1024px) {
-  .background__team .row2 img {
-    width: 280px;
-    padding: 10px;
     height: 436px;
     margin-bottom: 32px;
     border-radius: 26.78px;

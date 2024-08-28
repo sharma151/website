@@ -2,6 +2,7 @@
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap ;
     padding: 0px 100px 300px 100px;
     position: relative;
     top: 216px;
@@ -43,6 +44,7 @@
     }
     &__links{
         display: flex;
+        flex-wrap: wrap ;
         gap: 32px;
         @media (max-width:360px) {
             display: flex;
