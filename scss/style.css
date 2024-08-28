@@ -249,6 +249,9 @@
   justify-content: space-between;
   padding-bottom: 32px;
 }
+.features .rightside__upperrow--modifier {
+  outline: 1px solid green;
+}
 @media (max-width: 360px) {
   .features .rightside__upperrow {
     display: flex;
@@ -382,15 +385,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0px 100px 300px 100px;
-  position: relative;
-  top: 216px;
+  padding: 200px 100px 100px 100px;
 }
 @media (max-width: 360px) {
   .footer {
     padding: 0px 18px;
-    position: relative;
-    top: 64px;
+    padding-top: 64px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column-reverse;
@@ -401,8 +401,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 32px;
+    padding-top: 32px;
   }
 }
 .footer__socials h3 {
@@ -579,9 +578,43 @@
     padding-right: 23px;
   }
 }
+.navbar__right .tooglebutton .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.navbar .dropdown {
+  display: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media (max-width: 360px) {
+  .navbar .dropdown {
+    display: none;
+  }
+}
+.navbar .dropdown ul {
+  list-style: none;
+}
+.navbar .dropdown ul li a {
+  text-decoration: none;
+  font-family: poppins;
+  color: black;
+  font-size: 14px;
+}
+.navbar .dropdown button {
+  padding: 4px 15px 4px 15px;
+  border-radius: 50px 50px;
+  color: white;
+  background-color: #2B2730;
+  font-family: poppins;
+}
+
+div:has(#toggle:checked) ~ .dropdown {
+  display: block;
+}
 
 .background {
-  height: 1572px;
   width: 100%;
   background-color: #2B2730;
   position: relative;
@@ -596,16 +629,20 @@
     height: 2118px;
   }
 }
+@media (max-width: 1024px) {
+  .background {
+    position: relative;
+    top: -118px;
+    z-index: -1;
+  }
+}
 .background__team {
   position: relative;
-  top: 446px;
-  padding: 0px 100px 0px 100px;
+  padding: 390px 100px 0px 100px;
 }
 @media (max-width: 360px) {
   .background__team {
-    position: relative;
-    top: 164px;
-    padding: 0px 14px 0px 14px;
+    padding: 116px 14px 0px 14px;
   }
 }
 .background__team .row1 p {
@@ -635,8 +672,7 @@
   }
 }
 .background__team .row2 {
-  position: relative;
-  top: 116px;
+  padding-top: 116px;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -650,8 +686,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 40px;
+    padding-top: 40px;
   }
 }
 .background__team .row2 img {
@@ -663,30 +698,31 @@
   .background__team .row2 img {
     width: 328px;
     height: 436px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     border-radius: 26.78px;
   }
 }
 .background__team .row3 {
-  position: relative;
+  padding-top: 116px;
+  padding-bottom: 108px;
   width: 100%;
-  top: 250px;
   display: inline-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (max-width: 360px) {
   .background__team .row3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 45px;
+    padding-top: 45px;
   }
 }
 .background__team .row3 .left {
   display: flex;
   gap: 32px;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 360px) {
   .background__team .row3 .left {
@@ -767,6 +803,5 @@
 @media (max-width: 360px) {
   .container {
     width: 100%;
-    height: 4700px;
   }
 }/*# sourceMappingURL=style.css.map */
