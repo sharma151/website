@@ -141,9 +141,8 @@
         }
         &__lowerrow{
             display: flex;
-            justify-content: space-between;flex-wrap: wrap ;
-            
-            
+            justify-content: space-between;
+            flex-wrap: wrap ;
             @media(max-width:360px){
                 display: flex;
                 flex-direction: column;
@@ -158,7 +157,6 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                   
                     svg{
                         width: 92px;
                         height: 92px;
@@ -179,7 +177,6 @@
             }
             .lowerright{
                 @media (max-width:360px){
-                  
                     display: flex;
                     flex-direction: column;
                     align-items: center;
