@@ -10,7 +10,7 @@
         top: -90px;
       
     }
-    .leftside{
+    &__leftside{
         
         h2{
             font-family: $logo-font;
@@ -59,21 +59,18 @@
             }
         }
     }
-    .rightside{
-        
+    &__rightside{
+        display: flex;
         @media(max-width:360px){
             padding-top: 32px;
         }
       
-        &__upperrow{
+        &--upperrow{
             display: flex;
             flex-wrap: wrap ;
             justify-content:space-between;
             padding-bottom: 32px;
 
-            // &--modifier{
-            //     outline: 1px solid green;
-            // }
 
             @media(max-width:360px){
                 display: flex;
@@ -139,7 +136,7 @@
             }
             
         }
-        &__lowerrow{
+        &--lowerrow{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap ;

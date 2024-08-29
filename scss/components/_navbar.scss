@@ -58,13 +58,12 @@
             color: white;
             background-color:$button-color;
             font-family:$logo-font;
-            transition: transform 0.3s ease 0s;
             @media(max-width:360px){
                 display:none;
             }
             
         }
-        .tooglebutton{
+        &--tooglebutton{
             display: none;
             @media (max-width:360px) {
                 display: block;
@@ -86,7 +85,7 @@
           
         
     }
-    .dropdown{
+    &__dropdown{
         display: none;
         border: 2px solid black;
         padding: 10px;
@@ -117,7 +116,7 @@
         }
     }
 }
-div:has(#toggle:checked) ~ .dropdown {
+div:has(#toggle:checked) ~ .navbar__dropdown {
        display: block; 
        
     }
