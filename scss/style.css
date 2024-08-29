@@ -23,6 +23,11 @@
     display: block;
   }
 }
+@media (max-width: 1024px) {
+  .banner__row {
+    flex-wrap: nowrap;
+  }
+}
 .banner__row p {
   font-family: poppins;
   font-size: 72px;
@@ -55,6 +60,15 @@
     position: relative;
   }
 }
+@media (max-width: 320px) {
+  .banner__row--circle {
+    height: 100%;
+    width: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    position: relative;
+  }
+}
 .banner__row--circle svg {
   width: 204px;
   height: 204px;
@@ -65,6 +79,15 @@
     width: 102px;
     position: relative;
     left: 220px;
+    top: -40px;
+  }
+}
+@media (max-width: 320px) {
+  .banner__row--circle svg {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: 210px;
     top: -40px;
   }
 }
@@ -133,6 +156,11 @@
     top: 24px;
   }
 }
+@media (max-width: 320px) {
+  .cta__items {
+    padding: 0px 10px 0px 10px;
+  }
+}
 .cta__items h2 {
   font-size: 56px;
   font-family: poppins;
@@ -190,6 +218,11 @@
     flex-direction: column;
     position: relative;
     top: -90px;
+  }
+}
+@media (max-width: 1024px) {
+  .features {
+    flex-wrap: nowrap;
   }
 }
 .features__leftside h2 {
@@ -258,8 +291,19 @@
     flex-direction: column;
     padding: 0px;
     align-items: center;
-    gap: 32px;
+    padding-top: 32px;
     padding-bottom: 32px;
+    gap: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .features__rightside--upperrow {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 320px) {
+  .features__rightside--upperrow {
+    padding-top: 32px;
   }
 }
 @media (max-width: 360px) {
@@ -328,6 +372,11 @@
     padding: 0px;
     align-items: center;
     gap: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .features__rightside--lowerrow {
+    flex-wrap: nowrap;
   }
 }
 @media (max-width: 360px) {
@@ -688,6 +737,11 @@ div:has(#toggle:checked) ~ .navbar__dropdown {
     padding-top: 40px;
   }
 }
+@media (max-width: 1024px) {
+  .background__team--row2 {
+    flex-wrap: nowrap;
+  }
+}
 .background__team--row2 img {
   height: 522px;
   width: 340px;
@@ -704,6 +758,7 @@ div:has(#toggle:checked) ~ .navbar__dropdown {
 @media (max-width: 1024px) {
   .background__team--row2 img {
     width: 280px;
+    padding: 10px;
     height: 436px;
     border-radius: 26.78px;
   }

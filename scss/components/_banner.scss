@@ -2,8 +2,6 @@
     padding: 150px 100px 0px 100px;
     @media (max-width:360px) {
         padding: 0px 16px 0px 16px;
-
-        
     }
     
     &__row{
@@ -11,8 +9,11 @@
         justify-content: space-between;
         flex-wrap: wrap ;
         @media (max-width:360px){
-                
             display: block;
+        }
+        @media(max-width:1024px){
+            
+            flex-wrap: nowrap;
         }
         p{
             font-family: $logo-font;
@@ -24,6 +25,10 @@
                 line-height: 40px;
                 
             } 
+            // @media (min-width: 360px) and (max-width: 1024px){
+            //     font-size: 60px;   
+                
+            // }
             span{
                 font-family: $logo-font;
             font-size: 72px;
@@ -47,6 +52,14 @@
                 position: relative;
                 
             }
+            @media (max-width:320px) {
+                height: 100%;
+                width: 100%;
+                max-width: 80px;
+                max-height:80px;
+                position: relative;
+                
+            }
             svg{
                 width: 204px;
                 height: 204px;
@@ -55,6 +68,13 @@
                     width: 102px;
                     position: relative;
                     left: 220px;
+                    top: -40px;
+                }
+                @media (max-width:320px){
+                    height: 80px;
+                    width: 80px;
+                    position: relative;
+                    left: 210px;
                     top: -40px;
                 }
             }

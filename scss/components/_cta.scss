@@ -23,9 +23,10 @@
         @media (max-width:360px) {
             padding: 0px;
             position: relative;
-            top: 24px;
-            
-            
+            top: 24px;            
+        }
+        @media(max-width:320px){
+            padding:0px 10px 0px 10px;
         }
        
     

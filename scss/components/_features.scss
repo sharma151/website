@@ -8,7 +8,10 @@
         flex-direction: column;
         position: relative;
         top: -90px;
-      
+    }
+    @media(max-width:1024px){
+                    
+        flex-wrap: nowrap;
     }
     &__leftside{
         
@@ -64,6 +67,8 @@
         @media(max-width:360px){
             padding-top: 32px;
         }
+        
+        
       
         &--upperrow{
             display: flex;
@@ -78,15 +83,22 @@
                 padding: 0px;
                 align-items: center;
                 
-                gap: 32px;
-                padding-bottom: 32px;                
+                padding-top: 32px;
+                padding-bottom: 32px; 
+                gap: 32px;               
+            }
+            @media(max-width:1024px){    
+                flex-wrap: nowrap;
+            }
+            @media(max-width:320px){
+                padding-top: 32px;
             }
             .upperleft{
                 @media (max-width:360px){
-                    
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    
                     svg{
                         width: 92px;
                         height: 92px;
@@ -148,6 +160,10 @@
                 
                 gap: 32px;  
                 
+            }
+            @media(max-width:1024px){
+                    
+                flex-wrap: nowrap;
             }
             .lowerleft{
                 @media (max-width:360px){
