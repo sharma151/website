@@ -614,6 +614,11 @@
     display: none;
   }
 }
+.navbar__right button:hover {
+  background-color: #FFB84C;
+  color: black;
+  transition: 0.4s;
+}
 .navbar__right--tooglebutton {
   display: none;
 }
@@ -762,6 +767,9 @@ div:has(#toggle:checked) ~ .navbar__dropdown {
     height: 436px;
     border-radius: 26.78px;
   }
+}
+.background__team--row2 img:hover {
+  opacity: 0.3;
 }
 .background__team--row3 {
   padding-top: 116px;

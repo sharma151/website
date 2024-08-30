@@ -65,6 +65,11 @@
             
             
         }
+        button:hover{
+            background-color: $spancolor;
+            color: black;
+            transition: 0.4s;
+        }
         &--tooglebutton{
             display: none;
             @media (max-width:360px) {
