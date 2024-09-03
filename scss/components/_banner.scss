@@ -11,9 +11,7 @@
         @media (max-width:360px){
             display: block;
         }
-        @media(max-width:1024px){ 
-            flex-wrap: nowrap;
-        }
+       
         p{
             font-family: $logo-font;
             font-size: 72px;
@@ -25,15 +23,18 @@
                 line-height: 40px;
                 
             } 
+            @media (min-width: 360px) and (max-width: 850px) {
+                font-size: 45px;
+                line-height: 50px;
+              }
+              
+              
             span{
                 font-family: $logo-font;
-            font-size: 72px;
             font-weight: 700;
             color: $spancolor;
-            @media (max-width:360px) {
-                font-size: 32px;                
-            } 
-            
+           
+           
             }    
         }
         &--circle{

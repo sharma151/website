@@ -23,11 +23,6 @@
     display: block;
   }
 }
-@media (max-width: 1024px) {
-  .banner__row {
-    flex-wrap: nowrap;
-  }
-}
 .banner__row p {
   font-family: poppins;
   font-size: 72px;
@@ -40,16 +35,16 @@
     line-height: 40px;
   }
 }
+@media (min-width: 360px) and (max-width: 850px) {
+  .banner__row p {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
 .banner__row p span {
   font-family: poppins;
-  font-size: 72px;
   font-weight: 700;
   color: #FFB84C;
-}
-@media (max-width: 360px) {
-  .banner__row p span {
-    font-size: 32px;
-  }
 }
 @media (max-width: 360px) {
   .banner__row--circle {
