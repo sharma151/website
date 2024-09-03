@@ -456,6 +456,10 @@
 .footer__socials h3 {
   font-family: poppins;
   color: #2B2730;
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.footer__socials h3:hover {
+  transform: scale(1.5);
 }
 .footer__socials h3 span {
   color: #FFB84C;
@@ -470,6 +474,12 @@
   .footer__socials ul {
     padding: 16px;
   }
+}
+.footer__socials ul li {
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.footer__socials ul li:hover {
+  transform: scale(1.5);
 }
 .footer__links {
   display: flex;

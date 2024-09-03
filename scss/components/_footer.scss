@@ -22,7 +22,11 @@
         h3{
             font-family: $logo-font;
             color: #2B2730;
-            
+            transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+                &:hover{
+                    
+                    transform: scale(1.5);
+                }
             span{
                 color:$spancolor;
             }
@@ -36,7 +40,14 @@
                 padding: 16px;
                 
             }
-
+            li{
+                transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+                &:hover{
+                    
+                    transform: scale(1.5);
+                }
+            }   
+            
             }
 
         }
