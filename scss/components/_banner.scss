@@ -11,8 +11,7 @@
         @media (max-width:360px){
             display: block;
         }
-        @media(max-width:1024px){
-            
+        @media(max-width:1024px){ 
             flex-wrap: nowrap;
         }
         p{
@@ -20,24 +19,23 @@
             font-size: 72px;
             line-height: 80px;
             font-weight: 700;
+            
             @media (max-width:360px) {
                 font-size: 32px;
                 line-height: 40px;
                 
             } 
-            // @media (min-width: 360px) and (max-width: 1024px){
-            //     font-size: 60px;   
+            @media (max-width: 600px){
+                word-break: break-all;
                 
-            // }
+            }
             span{
                 font-family: $logo-font;
             font-size: 72px;
             font-weight: 700;
             color: $spancolor;
             @media (max-width:360px) {
-                font-size: 32px;
-                
-                
+                font-size: 32px;                
             } 
             }    
         }

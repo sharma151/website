@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 32px 100px 0px 100px;
+    overflow: hidden;
     @media (max-width:360px) {
         padding: 24px 16px 24px 16px;
         
@@ -16,6 +17,7 @@
         
         h3{
             font-family:$logo-font;
+            color: #2B2730;
             span{
                 color:$spancolor;
                 }
@@ -43,26 +45,34 @@
         display: flex;
         justify-content: space-between;
         
-        p{
+        p {
+            padding-top:15px;
+            padding-right: 10px;
+            
+            a{
             font-family:$logo-font;
             font-size:$smalltext;
-            padding-top: 15px;
-            padding-right: 10px;
+            color: #000000;
+            text-decoration: none;
+            
             @media(max-width:360px){
                 display:none;
             }
-           
+        }
         }
         button{
             padding: 16px 32px 16px 32px;
             border-radius: 50px 50px;
-            color: white;
             background-color:$button-color;
-            font-family:$logo-font;
+            
             @media(max-width:360px){
                 display:none;
             }
-            
+            a{
+                font-family:$logo-font;
+                color: white;
+                text-decoration: none;
+            }
             
         }
         button:hover{

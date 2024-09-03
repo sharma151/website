@@ -12,44 +12,44 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="navbar__left">
+            <h3>yodora<span>.</span></h3>
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        <div class="navbar__right">
+            <p><a href="">Become a member</a></p>
+            <button> <a href="">Sign in</a></button>
+            <div class=" navbar__right--tooglebutton"><input type="checkbox" id="toggle" class="checkbox"><svg
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="1" fill="#2B2730" />
+                    <circle cx="12" cy="5" r="1" fill="#2B2730" />
+                    <circle cx="19" cy="5" r="1" fill="#2B2730" />
+                    <circle cx="5" cy="12" r="1" fill="#2B2730" />
+                    <circle cx="12" cy="12" r="1" fill="#2B2730" />
+                    <circle cx="19" cy="12" r="1" fill="#2B2730" />
+                    <circle cx="5" cy="19" r="1" fill="#2B2730" />
+                    <circle cx="12" cy="19" r="1" fill="#2B2730" />
+                    <circle cx="19" cy="19" r="1" fill="#2B2730" />
+                </svg>
+            </div>
+        </div>
+        <div class="navbar__dropdown">
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Become a member</a></li>
+            </ul>
+            <button>Sign in</button>
+        </div>
+    </nav>
     <div class="container">
-        <nav class="navbar">
-            <div class="navbar__left">
-                <h3>yodora<span>.</span></h3>
-                <ul>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
-            <div class="navbar__right">
-                <p>Become a member</p>
-                <button>Sign in</button>
-                <div class=" navbar__right--tooglebutton"><input type="checkbox" id="toggle" class="checkbox"><svg
-                        width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="1" fill="#2B2730" />
-                        <circle cx="12" cy="5" r="1" fill="#2B2730" />
-                        <circle cx="19" cy="5" r="1" fill="#2B2730" />
-                        <circle cx="5" cy="12" r="1" fill="#2B2730" />
-                        <circle cx="12" cy="12" r="1" fill="#2B2730" />
-                        <circle cx="19" cy="12" r="1" fill="#2B2730" />
-                        <circle cx="5" cy="19" r="1" fill="#2B2730" />
-                        <circle cx="12" cy="19" r="1" fill="#2B2730" />
-                        <circle cx="19" cy="19" r="1" fill="#2B2730" />
-                    </svg>
-                </div>
-            </div>
-            <div class="navbar__dropdown">
-                <ul>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Become a member</a></li>
-                </ul>
-                <button>Sign in</button>
-            </div>
-        </nav>
-        <div class="banner">
+        <section class="banner">
             <div class="banner__row">
                 <p>learn from your<br> favorite creators <br>about <span>fantasy reports</span></p>
                 <div class="banner__row--circle">
@@ -69,8 +69,8 @@
             <div class="banner__image">
                 <img src="./images/photo1.1.png" alt="" srcset="">
             </div>
-        </div>
-        <div class="background">
+        </section>
+        <section class="background">
             <div class="background__team">
                 <div class="background__team--row1">
                     <p><span>Get direct</span> <br>knowledge and insight</p>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="right">
                         <p>Explore the <br> marketplace</p>
-                        <a href="http://"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                        <a href=""><svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="64" height="64" rx="32" fill="#FFB84C" />
                                 <path d="M26 20L38 32L26 44" stroke="#2B2730" stroke-width="2" stroke-linecap="round" />
@@ -96,8 +96,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="features">
+        </section>
+        <section class="features">
             <div class="features__leftside">
                 <h2>Why become a <br> creator?</h2>
                 <p>Engage with your supporter and subscriber to sell your skills, <br>
@@ -163,14 +163,14 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="cta">
+        </section>
+        <section class="cta">
             <div class="cta__items">
                 <h2>Engage without limits</h2>
                 <p>Join a growing community and talk directly with your favorites creators</p>
                 <button><a href="#">Get started</a></button>
             </div>
-        </div>
+        </section>
         <footer class="footer">
             <div class="footer__socials">
                 <h3>yodora<span>.</span></h3>
@@ -242,15 +242,6 @@
             </div>
         </footer>
     </div>
-    <!-- <script>
-        const togglebtn = document.querySelector('.togglebutton')
-        const togglebuttonIcon=document.querySelector('.togglebutton svg')
-        const dropdown = document.querySelector('.dropdown')
-
-        togglebtn.onclick=function(){
-            dropdown.classList.toggle('open')
-        }
-    </script> -->
 </body>
 
 </html>

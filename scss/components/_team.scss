@@ -74,8 +74,7 @@
                 padding-top: 40px;
                 }
                 @media(max-width:1024px){
-                    
-                    flex-wrap: nowrap;
+                    display: flex;
                 }
                 
             
@@ -101,9 +100,7 @@
                     border-radius: 26.78px;
                 } 
             }
-            img:hover{
-                opacity: 0.3;
-            }
+            
         
         }
        

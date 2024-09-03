@@ -40,6 +40,11 @@
     line-height: 40px;
   }
 }
+@media (max-width: 600px) {
+  .banner__row p {
+    word-break: break-all;
+  }
+}
 .banner__row p span {
   font-family: poppins;
   font-size: 72px;
@@ -455,6 +460,7 @@
 }
 .footer__socials h3 {
   font-family: poppins;
+  color: #2B2730;
 }
 .footer__socials h3 span {
   color: #FFB84C;
@@ -546,6 +552,7 @@
   display: flex;
   justify-content: space-between;
   padding: 32px 100px 0px 100px;
+  overflow: hidden;
 }
 @media (max-width: 360px) {
   .navbar {
@@ -564,6 +571,7 @@
 }
 .navbar__left h3 {
   font-family: poppins;
+  color: #2B2730;
 }
 .navbar__left h3 span {
   color: #FFB84C;
@@ -592,27 +600,34 @@
   justify-content: space-between;
 }
 .navbar__right p {
-  font-family: poppins;
-  font-size: 16px;
   padding-top: 15px;
   padding-right: 10px;
 }
+.navbar__right p a {
+  font-family: poppins;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
 @media (max-width: 360px) {
-  .navbar__right p {
+  .navbar__right p a {
     display: none;
   }
 }
 .navbar__right button {
   padding: 16px 32px 16px 32px;
   border-radius: 50px 50px;
-  color: white;
   background-color: #2B2730;
-  font-family: poppins;
 }
 @media (max-width: 360px) {
   .navbar__right button {
     display: none;
   }
+}
+.navbar__right button a {
+  font-family: poppins;
+  color: white;
+  text-decoration: none;
 }
 .navbar__right button:hover {
   background-color: #FFB84C;
@@ -744,7 +759,7 @@ div:has(#toggle:checked) ~ .navbar__dropdown {
 }
 @media (max-width: 1024px) {
   .background__team--row2 {
-    flex-wrap: nowrap;
+    display: flex;
   }
 }
 .background__team--row2 img {
@@ -767,9 +782,6 @@ div:has(#toggle:checked) ~ .navbar__dropdown {
     height: 436px;
     border-radius: 26.78px;
   }
-}
-.background__team--row2 img:hover {
-  opacity: 0.3;
 }
 .background__team--row3 {
   padding-top: 116px;
