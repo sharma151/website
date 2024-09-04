@@ -34,7 +34,12 @@
     }
     
     &__leftside{
-        
+        @media (min-width:361px) and (max-width:640px){
+            text-align: center;
+        }
+        @media (min-width:640px) and (max-width:768px){
+            text-align: center;
+        }
         h2{
             font-family: $logo-font;
             font-size: 56px;
@@ -51,12 +56,14 @@
                 font-size:45px;
                 }
                 @media (min-width:361px) and (max-width:640px){
-                    font-size: 40px;
+                    font-size: 35px;
                     line-height: 45px;
+
                 }
                 @media (min-width:1024px)and (max-width:1244px){
                     font-size:45px;
                     }
+
         }
         p{
             font-family: $logo-font;
@@ -95,12 +102,14 @@
     }
     &__rightside{
         display: flex;
-        @media(max-width:360px){
+        @media (max-width:360px){
             padding-top: 32px;
         }
-        // @media(min-width:361px) and (max-width:640px){
-            
-        // }
+        @media (min-width:361px) and (max-width:640px){
+            align-items: center;
+            display: flex;
+        }
+       
         &--upperrow{
             display: flex;
             flex-wrap: wrap ;
@@ -129,7 +138,9 @@
             }
             @media(min-width:361px) and (max-width:640px){
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
             }
             @media (min-width:1024px)and (max-width:1244px){
                 flex-wrap: nowrap;
@@ -147,10 +158,16 @@
                     }
                     
                 }
+                @media(min-width:361px) and (max-width:640px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
                 h3{
                 font-family: $logo-font;
                 font-size: 24px;
-                    
+                
                 }
                 p{
                     font-size: 16px;
@@ -159,6 +176,7 @@
                     @media(max-width:360px){
                         text-align:center;
                     }
+                    
                 }
             }
             .upperright{
@@ -174,6 +192,13 @@
                     }
                     
                 }
+                @media(min-width:361px) and (max-width:640px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 0px;
+                }
+                
                 h3{
                     font-family: $logo-font;
                     font-size: 24px;
@@ -206,8 +231,11 @@
                 flex-wrap: nowrap;
             }
             @media(min-width:361px) and (max-width:640px){
-                display: block;
-                padding-left: 130px;
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                align-items: center;    
+                
                 
             }
            
@@ -220,6 +248,11 @@
                         width: 92px;
                         height: 92px;
                     }
+                }
+                @media(min-width:361px) and (max-width:640px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
                 h3{
                     font-family: $logo-font;
@@ -243,6 +276,12 @@
                         width: 92px;
                         height: 92px;
                     }
+                }
+                @media(min-width:361px) and (max-width:640px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
                 }
                 @media (min-width:768px) and (max-width:1024px){    
                     margin-left: 32px;
