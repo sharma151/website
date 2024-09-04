@@ -9,9 +9,16 @@
         margin: 0px 18px 0px 18px;
         position: relative;
         top: 0px;
-        height: 284px;
-        // padding: 24px 16px 24px 16px;
-        
+        height: 284px;        
+    }
+    @media(min-width:768px) and (max-width:1024px){
+        margin: 0px 50px 0px 50px;
+    }
+    @media(min-width:640px) and (max-width:768px){
+        margin: 0px 50px 0px 50px;
+    }
+    @media(min-width:361px) and (max-width:640px){
+        margin:0px 40px 0px 50px;
     }
     
     &__items{
@@ -28,6 +35,15 @@
         @media(max-width:320px){
             padding:0px 10px 0px 10px;
         }
+        @media(min-width:640px) and (max-width:768px){            
+            
+            padding-top: 60px;
+        }
+        @media(min-width:361px) and (max-width:640px){
+            margin: 0px 50px 0px 50px;
+            padding-top: 50px;
+        }
+        
        
     
     h2{
@@ -42,6 +58,16 @@
             text-align: center;
             
         }
+        @media(min-width:640px) and (max-width:768px){
+            font-size: 40px;
+            text-align: center;
+        }
+        @media (min-width:361px) and (max-width:640px){
+            font-size:40px;
+            text-align:center;
+            line-height: 45px;
+        }
+
         
     }
     p{
@@ -52,6 +78,13 @@
         color: white;
         @media(max-width:360px){
             text-align: center;
+        }
+        @media(min-width:640px) and (max-width:768px){
+            text-align: center;
+        }
+        @media (min-width:361px) and (max-width:640px){
+            
+            text-align:center;
         }
     }
     button{    

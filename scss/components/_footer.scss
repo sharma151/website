@@ -12,6 +12,22 @@
             flex-direction: column-reverse;
            
         }
+        @media (min-width:768px) and (max-width:1024px){
+            padding: 160px 50px 100px 50px;   
+        }
+        @media (min-width:640px) and (max-width:768px){
+            padding: 150px 50px 100px 50px;
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+        @media (min-width:361px) and (max-width:640px){
+            padding-top:150px ;
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction: column-reverse;
+            
+        }
     &__socials{
         @media(max-width:360px){
             display: flex;
@@ -19,6 +35,20 @@
             align-items: center;
             padding-top: 32px;
         }
+        @media(min-width:640px) and (max-width:768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+        }
+        @media (min-width:361px) and (max-width:640px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            
+        }
+
         h3{
             font-family: $logo-font;
             color: #2B2730;
@@ -39,6 +69,12 @@
             @media (max-width:360px) {
                 padding: 16px;
                 
+            }
+            @media(min-width:640px) and (max-width:768px){
+                padding: 18px;
+            }
+            @media(min-width:361px) and (max-width:640px){
+                padding: 18px;
             }
             li{
                 transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
@@ -62,8 +98,26 @@
             flex-direction: column;
             
         }
+        @media(min-width:768px) and (max-width:1024px){
+            flex-wrap: nowrap;
+            gap: 8px;
+        }
+        @media(min-width:640px) and (max-width:768px){
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: space-around;
+            gap:2px;
+            padding:5px;
+       }
+       @media (min-width:361px) and (max-width:640px){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+            
+       }
         .about{
             
+       
             p{
                 font-size: 18px;
                 font-family: $logo-font;

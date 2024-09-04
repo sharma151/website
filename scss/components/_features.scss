@@ -9,10 +9,25 @@
         position: relative;
         top: -90px;
     }
-    @media(max-width:1024px){
-                    
-        flex-wrap: wrap;
+    @media (min-width:768px)and (max-width:1024px){
+        padding: 0px 50px 0px 50px;
+        flex-wrap: nowrap;
     }
+    @media (min-width:640px) and (max-width:768px){
+        padding: 0px 50px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;     
+    }
+    @media(min-width:361px) and (max-width:640px){
+        padding: 0px 40px 0px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    
     &__leftside{
         
         h2{
@@ -26,7 +41,13 @@
                     line-height: 40px;
                     letter-spacing: -0.025em;
                     text-align: left;
-
+                }
+                @media (min-width:768px)and (max-width:1024px){
+                font-size:45px;
+                }
+                @media (min-width:361px) and (max-width:640px){
+                    font-size: 40px;
+                    line-height: 45px;
                 }
         }
         p{
@@ -67,38 +88,46 @@
         @media(max-width:360px){
             padding-top: 32px;
         }
-        
-        
-      
+        // @media(min-width:361px) and (max-width:640px){
+            
+        // }
         &--upperrow{
             display: flex;
             flex-wrap: wrap ;
             justify-content:space-between;
             padding-bottom: 32px;
 
-
+            @media(max-width:320px){
+                padding-top: 32px;
+            }
             @media(max-width:360px){
                 display: flex;
                 flex-direction: column;
                 padding: 0px;
                 align-items: center;
-                
                 padding-top: 32px;
                 padding-bottom: 32px; 
                 gap: 32px;               
             }
-            @media(max-width:1024px){    
-                flex-wrap: wrap;
+            @media (min-width:768px) and (max-width:1024px){    
+                display: flex;
+                flex-wrap: nowrap;
             }
-            @media(max-width:320px){
-                padding-top: 32px;
+            @media (min-width:640px) and (max-width:768px){    
+                display: flex;
+                flex-wrap: nowrap;
             }
+            @media(min-width:361px) and (max-width:640px){
+                display: flex;
+                justify-content: center;
+            }
+            
+            
             .upperleft{
                 @media (max-width:360px){
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    
                     svg{
                         width: 92px;
                         height: 92px;
@@ -123,7 +152,6 @@
                 padding-left: 34px;
                 @media (max-width:360px){
                     padding: 0px;
-                   
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -157,14 +185,19 @@
                 flex-direction: column;
                 padding: 0px;
                 align-items: center;
-                
                 gap: 32px;  
                 
             }
-            @media(max-width:1024px){
-                    
-                flex-wrap: wrap;
+            @media (min-width:768px) and (max-width:1024px){    
+                display: flex;
+                flex-wrap: nowrap;
             }
+            @media(min-width:361px) and (max-width:640px){
+                display: block;
+                padding-left: 130px;
+                
+            }
+           
             .lowerleft{
                 @media (max-width:360px){
                     display: flex;
@@ -197,6 +230,9 @@
                         width: 92px;
                         height: 92px;
                     }
+                }
+                @media (min-width:768px) and (max-width:1024px){    
+                    margin-left: 32px;
                 }
                 h3{
                     font-family: $logo-font;
