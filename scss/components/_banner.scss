@@ -2,8 +2,15 @@
     padding: 150px 100px 0px 100px;
     @media (max-width:360px) {
         padding: 0px 16px 0px 16px;
-
-        
+    }
+    @media (min-width:768px) and (max-width:1024px){
+        padding:100px 50px 0px 50px;
+    }
+    @media (min-width:640px) and (max-width:768px)  {
+        padding: 50px 50px 0px 50px;
+    }
+    @media (min-width:361px) and (max-width:640px)  {
+        padding: 50px 40px 0px 40px;
     }
     
     &__row{
@@ -11,32 +18,42 @@
         justify-content: space-between;
         flex-wrap: wrap ;
         @media (max-width:360px){
-                
             display: block;
         }
+        
+       
         p{
             font-family: $logo-font;
             font-size: 72px;
             line-height: 80px;
             font-weight: 700;
+            
             @media (max-width:360px) {
                 font-size: 32px;
                 line-height: 40px;
                 
             } 
+            @media (min-width: 768px) and (max-width: 1024px) {
+                font-size: 45px;
+                line-height: 50px;
+              }
+            @media (min-width:640px) and (max-width:768px)  {
+                font-size:30px ;
+                line-height:40px;
+            }
+            @media (min-width:361px) and (max-width:640px){
+                font-size: 18px;
+                line-height: 40px;
+            } 
             span{
                 font-family: $logo-font;
-            font-size: 72px;
             font-weight: 700;
             color: $spancolor;
-            @media (max-width:360px) {
-                font-size: 32px;
-                
-                
-            } 
+           
+           
             }    
         }
-        .circle{
+        &--circle{
             // height: 100%;
             // width: 100%;
             @media (max-width:360px) {
@@ -47,6 +64,32 @@
                 position: relative;
                 
             }
+            @media (max-width:320px) {
+                height: 100%;
+                width: 100%;
+                max-width: 80px;
+                max-height:80px;
+                position: relative;
+                
+            }
+            @media (min-width:768px)and (max-width:1024px) {
+                height: 100%;
+                width: 100%;
+                max-width: 150px;
+                max: height 150px; 
+            }
+            @media (min-width:640px) and (max-width:768px)  {
+                height: 100%;
+                width: 100%;
+                max-width: 100px;
+                max-height:100px;
+            }
+            @media (min-width:361px) and (max-width:640px){
+                height: 100%;
+                width: 100%;
+                max-width: 80px;
+                max-height:80px;
+            }
             svg{
                 width: 204px;
                 height: 204px;
@@ -55,7 +98,28 @@
                     width: 102px;
                     position: relative;
                     left: 220px;
+                    top: -50px;
+                }
+                @media (max-width:320px){
+                    height: 80px;
+                    width: 80px;
+                    position: relative;
+                    left: 210px;
                     top: -40px;
+                }
+                @media (min-width:768px)and (max-width:1024px){
+                    height: 150px;
+                    width: 150px;
+                    position: relative;
+                }
+                @media (min-width:640px) and (max-width:768px)  {
+                    height: 100px;
+                    width: 100px;
+                }
+                @media (min-width:361px) and (max-width:640px){
+                    height: 80px;
+                    width: 80px;
+                    
                 }
             }
 
@@ -75,6 +139,14 @@
             top: -24px;
             left: 2px;
         }
+        @media(min-width:640px) and (max-width:768px){
+            position: relative;
+            top:40px;
+        }
+        @media(min-width:361px) and (max-width:640px){
+            position: relative;
+            top: 30px;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -86,6 +158,10 @@
                 max-width: 324px;
                 height: 181.82px;
                 object-fit: cover;
+                border:4.31px solid #2B2730;
+                border-radius: 8.61px;
+            }
+            @media(min-width:361px) and (max-width:640px){
                 border:4.31px solid #2B2730;
                 border-radius: 8.61px;
             }
