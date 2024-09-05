@@ -92,6 +92,7 @@
         border-radius: 50px ;
         background-color:$spancolor;
         border-style: none;
+        cursor: pointer;
         @media(max-width:360px){
             border-radius: 32px;
             align-items: center;
