@@ -9,6 +9,7 @@
         position: relative;
         top: -90px;
     }
+    
     @media (min-width:768px)and (max-width:1024px){
         padding: 0px 50px 0px 50px;
         flex-wrap: nowrap;
@@ -110,6 +111,7 @@
             align-items: center;
             display: flex;
         }
+        
        
         &--upperrow{
             display: flex;
@@ -119,6 +121,8 @@
 
             @media(max-width:320px){
                 padding-top: 32px;
+                position: relative;
+                left: -15px;
             }
             @media(max-width:360px){
                 display: flex;
@@ -226,6 +230,11 @@
                 align-items: center;
                 gap: 32px;  
                 
+            }
+            @media(max-width:320px){
+                padding-top: 32px;
+                position: relative;
+                left: -15px;
             }
             @media (min-width:768px) and (max-width:1024px){    
                 display: flex;
