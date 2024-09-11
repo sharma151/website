@@ -256,22 +256,29 @@
     </div>
     <!-- javascript starts here  -->
     <script>
-        const icons = document.querySelectorAll('.icon');
+        const icons = document.querySelectorAll(' ul li a > svg');
 
         icons.forEach(icon => {
+            // Mouseover event for the hover effect
             icon.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(-10px)';
             });
 
+            // Mouseout event to trigger bounce animation
             icon.addEventListener('mouseout', () => {
-                icon.style.transform = 'translateY(0)';
-                icon.style.animationDelay = '2s';
+                icon.style.transform = ''; // Reset the inline transform before adding the animation
+                icon.style.animationDelay = '1s';
                 icon.classList.add('bounce');
-                setTimeout(() => {
+
+                // Remove the bounce class after the animation ends to reset the state
+                icon.addEventListener('animationend', () => {
                     icon.classList.remove('bounce');
-                }, 1000); // Duration of the bounce animation
+                });
             });
         });
+
+
+
     </script>
 </body>
 
